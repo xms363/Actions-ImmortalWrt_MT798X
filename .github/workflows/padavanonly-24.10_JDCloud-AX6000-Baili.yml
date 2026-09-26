@@ -17,11 +17,11 @@ on:
       LAN_IP:
         description: 'Set LAN IP Address'
         required: true
-        default: '192.168.6.1'
+        default: '192.168.1.1'
       Default_Theme:
         description: 'Manually Set Default Theme'
         required: true
-        default: 'fluent'
+        default: 'argon'
       ssh:
         description: 'SSH connection to Actions'
         required: false
