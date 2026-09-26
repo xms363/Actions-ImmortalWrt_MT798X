@@ -9,6 +9,18 @@
 # File name: diy-part2.sh
 # Description: OpenWrt DIY script part 2 (After ./scripts/feeds update -a, Before ./scripts/feeds install -a)
 #
+# ======== 编译 OpenClash 最新版 =========
+# immortalwrt 插件库已经包含 OpenClash，若源码被删除或编译 OpenClash 最新版，使用以下命令自行编译，打开 immortalwrt官方插件库查询：https://github.com/immortalwrt/immortalwrt（选择 openwrt-24.10分支，打开 feeds.conf.default文件，再打开luci仓库找到“applications”查询插件）
+#sed -i '1i src-git openclash https://github.com/vernesong/OpenClash.git;master' ./feeds.conf.default
+        
+# ======== 编译 passwall 最新版 =========
+# immortalwrt插件库已经包含 passwall，若源码被删除或编译 Passwall 最新版，使用以下命令自行编译，打开 immortalwrt官方插件库查询：https://github.com/immortalwrt/immortalwrt（选择 openwrt-24.10分支，打开 feeds.conf.default文件，再打开luci仓库找到“applications”查询插件）
+# 编译 passwall_luci，去掉下面注释，此命令会在 feeds.conf.default文件，第 1 行插入 passwall_luci
+#sed -i '1i src-git passwall_luci https://github.com/Openwrt-Passwall/openwrt-passwall.git;main' ./feeds.conf.default
+
+# 编译 passwall_packages，再次在 feeds.conf.default文件，第 1 行插入 passwall_packages (这样 packages 就变成了第 1 行，luci 变成了第 2 行)
+#sed -i '1i src-git passwall_packages https://github.com/Openwrt-Passwall/openwrt-passwall-packages.git;main' ./feeds.conf.default
+
 
 rm -rf feeds/packages/net/open-app-filter
 git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
