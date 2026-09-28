@@ -105,7 +105,7 @@ jobs:
         cd openwrt
         ./scripts/feeds update -a
         cp $GITHUB_WORKSPACE/padavanonly-24.10/JDCloud-AX6000-Baili/fix.patch fix.patch
-        git apply fix.patch
+        ##git apply fix.patch
         $GITHUB_WORKSPACE/$DIY_P2_SH
         ./scripts/feeds install -a
 
