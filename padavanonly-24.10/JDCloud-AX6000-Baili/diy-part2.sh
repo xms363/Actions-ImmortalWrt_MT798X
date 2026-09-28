@@ -59,5 +59,5 @@ rm -rf /tmp/clash.tar.gz >/dev/null 2>&1
 ##-----------------Delete DDNS's examples-----------------
 sed -i '/myddns_ipv4/,$d' feeds/packages/net/ddns-scripts/files/etc/config/ddns
 ##-----------------Display fixed frequency info for MT7986A-----------------
-sed -i '/"mediatek"\/\*|"mvebu"\/\*)/i "mediatek/filogic")\n\tcpu_freq="2.0GHz" ;;' package/emortal/autocore/files/generic/cpuinfo
+##sed -i '/"mediatek"\/\*|"mvebu"\/\*)/i "mediatek/filogic")\n\tcpu_freq="2.0GHz" ;;' package/emortal/autocore/files/generic/cpuinfo
 
