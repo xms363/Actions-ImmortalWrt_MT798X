@@ -37,7 +37,7 @@ env:
   REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x-6.6
   REPO_BRANCH: openwrt-24.10-6.6
   FEEDS_CONF: padavanonly-24.10/JDCloud-AX6000-Baili/feeds.conf.default
-  CONFIG_FILE: padavanonly-24.10/JDCloud-AX6000-Baili/360t7_dae.config
+  CONFIG_FILE: padavanonly-24.10/JDCloud-AX6000-Baili/qihoo_360t7.config
   DIY_P1_SH: padavanonly-24.10/JDCloud-AX6000-Baili/diy-part1.sh
   DIY_P2_SH: padavanonly-24.10/JDCloud-AX6000-Baili/diy-part2.sh
   SSH_ACTIONS: false
