@@ -31,7 +31,7 @@ rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 27.x feeds/packages/lang/golang
 git clone https://github.com/sbwml/luci-app-openlist2 package/openlist
 git clone https://github.com/EasyTier/luci-app-easytier package/luci-app-easytier
-git clone https://github.com/gdy666/luci-app-lucky package/lucky
+#git clone https://github.com/gdy666/luci-app-lucky package/lucky
 ##-----Fix nginx.config for luci-app-quickfile------
 cat > feeds/packages/net/nginx-util/files/nginx.config << 'EOF'
 
