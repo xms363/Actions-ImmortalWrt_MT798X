@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 ###############手动修改##############
-name: padavanonly-24.10-cmcc_rax3000m-emcc
+name: padavanonly-24.10_cmcc-rax3000m-emcc
 
 on:
   repository_dispatch:
@@ -33,7 +33,7 @@ env:
   ###############手动修改##############
   ##手动设置上传时候的打包名称和tag名称UPLOAD_TAG_NAME
   OPENWRT_NAME: padavanonly-24.10
-  UPLOAD_TAG_NAME: cmcc_rax3000m-emcc
+  UPLOAD_TAG_NAME: cmcc-rax3000m-emcc
   REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x-6.6
   REPO_BRANCH: openwrt-24.10-6.6
   FEEDS_CONF: padavanonly-24.10/JDCloud-AX6000-Baili/feeds.conf.default
